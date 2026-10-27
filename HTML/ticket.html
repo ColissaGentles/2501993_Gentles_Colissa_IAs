@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Ticket | Coding Conf 2026</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <img src="../assets/logo.png" alt="Coding Conf logo">
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="login.html">Register</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Success banner, text is filled in by ticket.js -->
+    <section class="banner">
+      <h1 id="congratsMsg">Congrats! Your ticket is ready.</h1>
+    </section>
+
+    <!-- Glassmorphism ticket, every value below is filled in by ticket.js -->
+    <section class="ticket" aria-label="Your conference ticket">
+      <div class="ticket-top">
+        <img src="../assets/logo.png" alt="Coding Conf badge icon" class="ticket-logo">
+        <p id="ticketSerial" class="serial">#00000</p>
+      </div>
+
+      <div class="ticket-body">
+        <img id="ticketAvatar" class="avatar" src="../assets/avatar-placeholder.png" alt="Your uploaded avatar">
+        <h2 id="ticketName">Attendee Name</h2>
+        <a id="ticketGithub" href="https://github.com/" target="_blank" rel="noopener">@username</a>
+      </div>
+
+      <div class="ticket-meta">
+        <p>Coding Conf 2026</p>
+        <p>October 26, 2026</p>
+        <p>Papine, Kgn</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Coding Conf</p>
+  </footer>
+
+  <script src="../js/ticket.js"></script>
+</body>
+</html>

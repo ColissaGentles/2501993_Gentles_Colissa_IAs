@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Coding Conf 2026</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <img src="../assets/logo.png" alt="Coding Conf logo">
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="login.html">Register</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="form-section">
+      <h1>Register for Coding Conf</h1>
+
+      <!-- novalidate so our own JavaScript handles all the checks -->
+      <form id="regForm" novalidate>
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" aria-describedby="nameError">
+          <p class="error" id="nameError" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" aria-describedby="emailError">
+          <p class="error" id="emailError" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="github">GitHub Username</label>
+          <input type="text" id="github" name="github" placeholder="@username" aria-describedby="githubError">
+          <p class="error" id="githubError" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="avatar">Avatar (JPEG or PNG, under 500KB)</label>
+          <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" aria-describedby="avatarError">
+          <p class="error" id="avatarError" role="alert"></p>
+        </div>
+
+        <button type="submit" class="btn">Generate My Ticket</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Coding Conf</p>
+  </footer>
+
+  <script src="../js/validation.js"></script>
+</body>
+</html>
